@@ -1,0 +1,71 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.shipping-method-module {
+	@extend .box-column;
+	
+}
+.shipping-method-dealer-container {
+	border: 1px dashed rgba(91, 91, 91, 1);
+	padding: 10px;
+	gap: 10px;
+	margin-bottom: 20px;
+	h3 {
+		margin-bottom: 10px;
+	}
+	hr {
+		background-color: #797979;
+		width: 80%;
+		margin-bottom: 20px;
+	}
+}
+.shipping-method-line-item {
+	display: flex;
+	gap: 20px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+.shipping-method-less-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.shipping-method-greater-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.shipping-method-less-container-right {
+	align-self: flex-start;
+	justify-self: right;
+}
+.shipping-method-greater-container-right {
+	display: flex;
+	align-self: flex-start;
+	justify-self: right;
+	gap: 20px;
+}
+.shipping-method-line-item-image-container{
+	width: 125px;
+	height: 125px;
+	background: rgb(176, 176, 176);
+}
+.shipping-method-line-item-data-container{
+	width: 250px;
+}
+.shipping-method-line-item-data {
+	display: flex;
+	flex-direction: column;
+	h4 {
+		margin-left: 10px;
+	}
+}
+
+.order-wizard-shipmethod-module {
+	display: none;
+}

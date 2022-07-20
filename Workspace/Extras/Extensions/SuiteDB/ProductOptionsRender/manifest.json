@@ -1,0 +1,81 @@
+{
+	"name": "ProductOptionsRender",
+	"fantasyName": "Product Options Render",
+	"vendor": "SuiteDB",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Render Product Options and Filter",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ProductOptions.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ProductOptions/Configuration/ProductOptions.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductOptions/Templates/suitedb_productoptionsrender_productoptions.tpl",
+					"Modules/ProductOptions/Templates/product_details_full_custom.tpl",
+					"Modules/ProductOptions/Templates/product_views_price_custom.tpl",
+					"Modules/ProductOptions/Templates/product_variant_carousel.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ProductOptions/Sass/_productoptionsrender-productoptions.scss"
+		},
+		"files": [
+			"Modules/ProductOptions/Sass/_productoptionsrender-productoptions.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ProductOptions/JavaScript/SuiteDB.ProductOptionsRender.ProductOptions.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductOptions/JavaScript/SuiteDB.ProductOptionsRender.ProductOptions.js",
+					"Modules/ProductOptions/JavaScript/SuiteDB.ProductOptionsRender.ProductOptions.Model.js",
+					"Modules/ProductOptions/JavaScript/SuiteDB.ProductOptionsRender.ProductOptions.SS2Model.js",
+					"Modules/ProductOptions/JavaScript/ProductVariantCarousel.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ProductOptions/SuiteScript/SuiteDB.ProductOptionsRender.ProductOptions.js",
+		"files": [
+			"Modules/ProductOptions/SuiteScript/SuiteDB.ProductOptionsRender.ProductOptions.js",
+			"Modules/ProductOptions/SuiteScript/ProductOptions.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ProductOptions/SuiteScript2/ProductOptions.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/SuiteDb/ProductOptionsRender@1.0.0",
+	"activation_id": "29",
+	"extension_id": "11801"
+}

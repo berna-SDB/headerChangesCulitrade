@@ -1,0 +1,31 @@
+.header-simplified-header{
+	height: $sc-main-nav-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: $sc-top-menu-background-color;
+}
+.login-register-login-title {
+    color: $sc-color-h2;
+    font-family: $sc-h2-font-family;
+    font-size: $sc-h2-font-size;
+    font-style: $sc-h2-font-style;
+    text-decoration: $sc-h2-text-decoration;
+    line-height: $sc-h2-line-height;
+    letter-spacing: $sc-h2-letter-spacing;
+    margin-top: $sc-h2-margin-top;
+    margin-bottom: $sc-h2-margin-bottom;
+    text-transform: $sc-h2-text-transform;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $sc-h2-desktop-font-size;
+    }
+}
+.header-simplified-header-logo{
+	text-align: center;
+width: 115px;
+	.header-logo-image{
+		width: auto;
+	}
+}
+

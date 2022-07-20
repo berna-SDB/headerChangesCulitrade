@@ -1,0 +1,57 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.returnsalesorder-info-card {
+    @extend .info-card;
+}
+
+.returnsalesorder-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.order-history-details-return-container {
+	display: flex;
+	width: 33.33333%;
+	padding: 0 15px 0 15px;
+
+	input {
+		width: 100%;
+		margin-top: 10px;
+		padding: 10px 20px;
+		border-radius: 6px;
+		letter-spacing: 0.5px;
+		font-weight: 400;
+	}
+}
+.order-history-item-actions-return-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0px 10px 0px;
+	gap: 15px;
+	input {
+		margin-bottom: 0 !important;
+		height: 40px;
+		width: 50%;
+	}
+	a {
+		height: 40px;
+		width: 50%;
+	}
+}
+.order-history-item-actions-return {
+	cursor:pointer;
+	cursor:hand;
+	@extend .button-primary;
+	@extend .button-small;
+	@extend .button-generic;
+	display: inline-block;
+	width: auto;
+}

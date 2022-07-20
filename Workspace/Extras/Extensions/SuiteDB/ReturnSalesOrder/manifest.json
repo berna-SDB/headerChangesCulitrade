@@ -1,0 +1,80 @@
+{
+	"name": "ReturnSalesOrder",
+	"fantasyName": "ReturnSalesOrder",
+	"vendor": "SuiteDB",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Customer return sales orders",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ReturnSalesOrder.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ReturnSalesOrder/Configuration/ReturnSalesOrder.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ReturnSalesOrder/Templates/suitedb_returnsalesorder_returnsalesorder.tpl",
+					"Modules/ReturnSalesOrder/Templates/order_history_details_custom.tpl",
+					"Modules/ReturnSalesOrder/Templates/order_history_item_actions_custom.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/ReturnSalesOrder/Sass/_returnsalesorder-returnsalesorder.scss"
+		},
+		"files": [
+			"Modules/ReturnSalesOrder/Sass/_returnsalesorder-returnsalesorder.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ReturnSalesOrder/JavaScript/SuiteDB.ReturnSalesOrder.ReturnSalesOrder.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ReturnSalesOrder/JavaScript/SuiteDB.ReturnSalesOrder.ReturnSalesOrder.js",
+					"Modules/ReturnSalesOrder/JavaScript/ReturnSalesOrder.View.js",
+					"Modules/ReturnSalesOrder/JavaScript/SuiteDB.ReturnSalesOrder.ReturnSalesOrder.Model.js",
+					"Modules/ReturnSalesOrder/JavaScript/SuiteDB.ReturnSalesOrder.ReturnSalesOrder.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ReturnSalesOrder/SuiteScript/SuiteDB.ReturnSalesOrder.ReturnSalesOrder.js",
+		"files": [
+			"Modules/ReturnSalesOrder/SuiteScript/SuiteDB.ReturnSalesOrder.ReturnSalesOrder.js",
+			"Modules/ReturnSalesOrder/SuiteScript/ReturnSalesOrder.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ReturnSalesOrder/SuiteScript2/ReturnSalesOrder.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/SuiteDb/ReturnSalesOrder@1.0.0",
+	"activation_id": "29",
+	"extension_id": "12101"
+}

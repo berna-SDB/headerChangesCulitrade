@@ -1,0 +1,33 @@
+
+
+.product-detail-to-quote-add-to-quote-button {
+	@extend .button-tertiary;
+	@extend .button-large;
+    border-radius: 0px;
+    border: 1px solid #E0E0E0;
+    background-color: transparent;
+    transition: all 0.3s ease;
+	margin-top: $sc-margin-lv3;
+	margin-left: 0;
+	font-weight: normal;
+	width: 100%;
+	text-align:center;
+	cursor:pointer;
+	cursor:hand;
+    &:hover {
+        background-color: #E0E0E0;
+        border: 1px solid #E0E0E0;
+        color: var(--color-primary)
+    }
+}
+
+.product-detail-to-quote-loading {
+	@extend .product-detail-to-quote-add-to-quote-button;
+	@extend .product-detail-to-quote-add-to-quote-button:disabled;
+	cursor: auto;
+}
+
+.quick-view-confirmation-modal .product-detail-to-quote-add-to-quote {
+	padding-left: 0;
+	padding-right: $sc-padding-lv3;
+}

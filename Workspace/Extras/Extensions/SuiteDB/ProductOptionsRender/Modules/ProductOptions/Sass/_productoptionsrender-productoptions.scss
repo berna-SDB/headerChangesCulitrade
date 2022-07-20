@@ -1,0 +1,105 @@
+.item-variants {
+    border: 2px solid #9f9f9f;
+    padding: 25px;
+}
+.item-variants-carousel {
+    margin-block: 2em;
+}
+.carousel-variant {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #9f9f9f;
+    min-height: 250px;
+    max-height: 250px;
+    font-size: 13px;
+    justify-content: space-between;
+}
+.related-item-wrapper {
+    width: 100% !important;
+    max-width: 240px !important;
+    padding-inline: 0.2em;
+}
+html .bx-controls {
+    position: absolute;
+    margin-top: 0;
+    inset: 0;
+    pointer-events: none;
+}
+.bx-wrapper {
+    position: relative;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.bx-viewport {
+    height: auto !important;
+}
+.bx-controls-direction {
+    position: relative;
+    top: 50%;
+}
+.bx-controls-direction {
+    position: relative;
+    top: -10px;
+}
+.next-icon,
+.prev-icon {
+    pointer-events: all;
+}
+.prev-icon {
+    inset: 0 auto 0 92%;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13.397' height='34.195' viewBox='0 0 13.397 34.195'><g id='Component_37_12' data-name='Component 37 %E2%80%93 12' transform='translate(13.397 34.195) rotate(180)'><path id='Path_2883' data-name='Path 2883' d='M1,0l9.541,17.1L1,34.2H4.764L14.4,17.1,4.764,0Z' transform='translate(-1 0)' fill='%23aba8ab'/></g></svg>");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 30px;
+    position: absolute;
+}
+.next-icon {
+    inset: 0 0 auto 95%;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13.397' height='34.195' viewBox='0 0 13.397 34.195'><path id='Path_2883' data-name='Path 2883' d='M1,0l9.541,17.1L1,34.2H4.764L14.4,17.1,4.764,0Z' transform='translate(-1 0)' fill='%23aba8ab'/></svg>");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 30px;
+    position: absolute;
+}
+.variant-seller-options {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.variant-seller-add-to-cart {
+    width: 100px;
+    height: 28px;
+    background-color: #d77650;
+    color: white;
+    border-radius: 3px;
+}
+.variant-seller-text-organe {
+    color: #d77650;
+}
+.variant-seller-placard {
+    width: 100px;
+    height: 25px;
+}
+.variant-seller-option {
+    padding: 5px;
+    min-width: 110px;
+    width: 110px;
+    border: 2px solid #9f9f9f;
+    p {
+        pointer-events: none;
+        font-size: 12px;
+    }
+}
+.variant-seller-option-selected {
+    font-weight: bold;
+}

@@ -1,0 +1,79 @@
+{
+	"name": "MultipleDeliveryMethod",
+	"fantasyName": "MultipleDeliveryMethod",
+	"vendor": "SuiteDB",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Delivery Method for each delear group item",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/DeliveryMethod.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/DeliveryMethod/Configuration/DeliveryMethod.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/DeliveryMethod/Templates/suitedb_multipledeliverymethod_deliverymethod.tpl",
+					"Modules/DeliveryMethod/Templates/order_wizard_title_custom.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/DeliveryMethod/Sass/_multipledeliverymethod-deliverymethod.scss"
+		},
+		"files": [
+			"Modules/DeliveryMethod/Sass/_multipledeliverymethod-deliverymethod.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/DeliveryMethod/JavaScript/SuiteDB.MultipleDeliveryMethod.DeliveryMethod.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/DeliveryMethod/JavaScript/SuiteDB.MultipleDeliveryMethod.DeliveryMethod.js",
+					"Modules/DeliveryMethod/JavaScript/DeliveryMethod.View.js",
+					"Modules/DeliveryMethod/JavaScript/SuiteDB.MultipleDeliveryMethod.DeliveryMethod.Model.js",
+					"Modules/DeliveryMethod/JavaScript/SuiteDB.MultipleDeliveryMethod.DeliveryMethod.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/DeliveryMethod/SuiteScript/SuiteDB.MultipleDeliveryMethod.DeliveryMethod.js",
+		"files": [
+			"Modules/DeliveryMethod/SuiteScript/SuiteDB.MultipleDeliveryMethod.DeliveryMethod.js",
+			"Modules/DeliveryMethod/SuiteScript/DeliveryMethod.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/DeliveryMethod/SuiteScript2/DeliveryMethod.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/SuiteDb/MultipleDeliveryMethod@1.0.0",
+	"activation_id": "29",
+	"extension_id": "11901"
+}

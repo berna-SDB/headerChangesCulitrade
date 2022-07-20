@@ -1,0 +1,108 @@
+{
+	"name": "NavBarMenu",
+	"fantasyName": "NavBarMenu",
+	"vendor": "SuiteDB",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "NavBar menu styles ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/NavBarModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/NavBarModule/Configuration/NavBarModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/NavBarModule/Templates/suitedb_navbarmenu_navbarmodule.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/NavBarModule/Templates/suitedb_navbarmenu_navbarmodule.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/NavBarModule/Templates/suitedb_navbarmenu_navbarmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/NavBarModule/Sass/_navbarmenu-navbarmodule.scss",
+			"myaccount": "Modules/NavBarModule/Sass/_navbarmenu-navbarmodule.scss",
+			"checkout": "Modules/NavBarModule/Sass/_navbarmenu-navbarmodule.scss"
+		},
+		"files": [
+			"Modules/NavBarModule/Sass/_navbarmenu-navbarmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.js",
+			"myaccount": "Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.js",
+			"checkout": "Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.js",
+					"Modules/NavBarModule/JavaScript/NavBarModule.View.js",
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.Model.js",
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.js",
+					"Modules/NavBarModule/JavaScript/NavBarModule.View.js",
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.Model.js",
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.js",
+					"Modules/NavBarModule/JavaScript/NavBarModule.View.js",
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.Model.js",
+					"Modules/NavBarModule/JavaScript/SuiteDB.NavBarMenu.NavBarModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/NavBarModule/SuiteScript/SuiteDB.NavBarMenu.NavBarModule.js",
+		"files": [
+			"Modules/NavBarModule/SuiteScript/SuiteDB.NavBarMenu.NavBarModule.js",
+			"Modules/NavBarModule/SuiteScript/NavBarModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/NavBarModule/SuiteScript2/NavBarModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/SuiteDb/NavBarMenu@1.0.0",
+	"activation_id": "29",
+	"extension_id": "12201"
+}
